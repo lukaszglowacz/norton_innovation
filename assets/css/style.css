@@ -91,7 +91,7 @@ html {
 .start-content h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    
+
 }
 
 .innovation-font {
@@ -112,6 +112,49 @@ html {
 
 /* Printer description */
 .img-fluid {
-    height: auto;  /* or any specific value */
-    width: 30%;  /* or any specific value */
+    height: auto;
+    /* or any specific value */
+    width: 30%;
+    /* or any specific value */
+}
+
+
+/* SwiperJS configuration */
+.swiper-wrapper {
+    width: auto;
+    height: 50vh;
+}
+
+.swiper-wrapper img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: contain;
+    object-position: center center;
+}
+
+/* On mobile, hide navigation buttons and pagination */
+@media (max-width: 600px) {
+
+    .swiper-button-next,
+    .swiper-button-prev,
+    .swiper-pagination {
+        display: none !important;
+        /* Use !important to override Swiper's inline styles */
+    }
+
+    .swiper {
+        height: calc(100vh - 60px);
+    }
+
+    .swiper-wrapper {
+        height: calc(100vh - 60px);
+    }
+
+    .swiper-wrapper img {
+        height: calc(100vh - 60px);
+        object-fit: cover;
+        object-position: center bottom;
+    }
 }
