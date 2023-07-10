@@ -4,6 +4,18 @@
     --default-font-color: #f4f7f4;
 }
 
+body {
+    display: none;
+}
+
+body.visible {
+    display: block;
+}
+
+body.visible .enter-website-image {
+    display: flex;
+}
+
 body,
 html {
     margin: 0;
