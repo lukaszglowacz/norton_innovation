@@ -17,7 +17,7 @@ body, html {
 }
 
 .enter-website-image {
-    background-image: url('/assets/img/background-image.gif');
+    background-image: url('../assets/img/background-image.gif');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
