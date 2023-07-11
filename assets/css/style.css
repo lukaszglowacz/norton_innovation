@@ -112,7 +112,6 @@ html {
 
 .profile-img img {
     width: 350px;
-    margin: 0 auto;
 }
 
 /* Printer description */
@@ -125,6 +124,10 @@ html {
 
 
 /* SwiperJS configuration */
+.swiper {
+    overflow: hidden;
+}
+
 .swiper-wrapper {
     width: auto;
     height: 50vh;
@@ -140,7 +143,7 @@ html {
 }
 
 /* On mobile, hide navigation buttons and pagination */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
     .swiper-button-next,
     .swiper-button-prev,
@@ -158,7 +161,6 @@ html {
     }
 
     .swiper-wrapper img {
-        height: calc(100vh - 60px);
         object-fit: cover;
         object-position: center bottom;
     }
