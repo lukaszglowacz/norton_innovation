@@ -96,8 +96,8 @@ html {
 
 .innovation-font {
     font-family: 'Kolker Brush', cursive;
-    font-size: calc(3rem + 5vw);
-    background: linear-gradient(45deg, red, orange, yellow, green, blue, violet);
+    font-size: calc(6rem + 5vw);
+    background: linear-gradient(105deg, red, orange, yellow, green, blue, violet);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -109,6 +109,11 @@ html {
 }
 
 /* About page */
+
+.profile-img img {
+    width: 350px;
+    margin: 0 auto;
+}
 
 /* Printer description */
 .img-fluid {
