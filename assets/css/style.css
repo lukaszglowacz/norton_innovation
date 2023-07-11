@@ -111,7 +111,8 @@ html {
 /* About page */
 
 .profile-img img {
-    width: 350px;
+    max-width: 350px;
+    border-radius: 50%;
 }
 
 /* Printer description */
@@ -163,5 +164,10 @@ html {
     .swiper-wrapper img {
         object-fit: cover;
         object-position: center bottom;
+    }
+
+    .profile-img img {
+        max-width: 100%;
+        border-radius: 6px;
     }
 }
