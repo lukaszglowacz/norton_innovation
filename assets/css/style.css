@@ -75,12 +75,6 @@ html {
     }
 }
 
-.start-content {
-    background-color: rgba(0, 0, 0, 0.5);
-    /* bg-dark text-white bg-opacity-50 */
-    color: white;
-    /* text-white */
-}
 
 .start-content h1 {
     font-family: 'Montserrat', sans-serif;
