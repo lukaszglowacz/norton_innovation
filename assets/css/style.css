@@ -84,14 +84,17 @@ html {
 
 .start-content h1 {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.5;
 }
 
 .start-content h2 {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
+}
 
+.start-content img {
+    max-width: 300px;
 }
 
 .innovation-font {
@@ -102,6 +105,11 @@ html {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
+    padding-left: 0.8rem;
+    padding-right: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: -2.5rem;
 }
 
 .start-buttons {
