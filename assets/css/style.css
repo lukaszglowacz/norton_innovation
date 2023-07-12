@@ -116,15 +116,10 @@ html {
     max-width: 350px;
     border-radius: 50%;
 }
-
-/* Printer description */
-.img-fluid {
-    height: auto;
-    /* or any specific value */
-    width: 30%;
-    /* or any specific value */
+/* Wp Spec */
+.wp-spec {
+    max-width: 450px;
 }
-
 
 /* SwiperJS configuration */
 .swiper {
