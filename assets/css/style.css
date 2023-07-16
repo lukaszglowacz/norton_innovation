@@ -22,22 +22,24 @@ html {
     padding: 0;
 }
 
-h1 {
+.special-header-font {
     font-family: 'Montserrat', sans-serif;
+    line-height: 1.3;
 }
 
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
     font-family: 'Merriweather Sans', sans-serif;
-    border: 1px solid blue;
+    line-height: 1.3;
 }
 
 p {
     font-family: 'Catamaran', sans-serif;
-    border: 1px solid orange;
+    line-height: 1.3;
 }
 
 .border {
