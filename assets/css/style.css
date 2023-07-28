@@ -130,10 +130,40 @@ p {
     max-width: 450px;
 }
 
+ /* Gallery */
+ #photos {
+    clear: both;
+    line-height: 0;
+    column-count: 3;
+    column-gap: 0;
+}
+
+#photos > img {
+    width: 100%;
+}
+
 /* On mobile, hide navigation buttons and pagination */
 @media (max-width: 768px) {
     .profile-img img {
         max-width: 100%;
         border-radius: 6px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #photos {
+        column-count: 3;
+}
+}
+
+@media screen and (max-width: 800px) {
+    #photos {
+        column-count: 2;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #photos {
+        column-count: 1;
     }
 }
