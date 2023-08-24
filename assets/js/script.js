@@ -1,5 +1,4 @@
 // Start enter image animation, when website is fully loaded
-
 window.addEventListener('load', function () {
     // After the page is fully loaded, make the body visible
     document.body.classList.add('visible');
@@ -7,35 +6,37 @@ window.addEventListener('load', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     const languageButton = document.getElementById("languageButton");
-    const urlParams = new URLSearchParams(window.location.search);
-    const lang = urlParams.get('lang') || 'en';
+    const languageMenu = document.getElementById("languageMenu");
+    
+    // Initialize button based on URL
+    const path = window.location.pathname;
+    const page = path.split("/").pop();
+    let currentLang = "Language"; // Default
 
-    // Set the button label to the current language
-    switch (lang) {
-        case 'en':
-            languageButton.textContent = 'English';
+    switch(page) {
+        case "index-en.html":
+            currentLang = "English";
             break;
-        case 'pl':
-            languageButton.textContent = 'Polski';
+        case "index-pl.html":
+            currentLang = "Polski";
             break;
-        case 'sv':
-            languageButton.textContent = 'Svenska';
+        case "index-sv.html":
+            currentLang = "Svenska";
             break;
         default:
-            languageButton.textContent = 'Language';
+            // This can be your default language for the index.html file
+            currentLang = "English";
+            break;
     }
-});
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    var languageButton = document.getElementById("languageButton");
-    var languageMenu = document.getElementById("languageMenu");
-
+    
+    languageButton.innerHTML = currentLang + ' <span class="caret"></span>';
+    
+    // Update button when menu item is clicked
     languageMenu.addEventListener("click", function (event) {
         var target = event.target;
 
         if (target.tagName === 'A') {
-            var selectedLanguage = target.getAttribute("data-language");
+            const selectedLanguage = target.getAttribute("data-language");
             languageButton.innerHTML = selectedLanguage + ' <span class="caret"></span>';
         }
     });
