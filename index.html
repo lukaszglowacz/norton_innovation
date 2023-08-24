@@ -27,13 +27,33 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top my-default-background-color p-0 m-0">
             <div class="container-lg">
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/img/logo/norton-innovation-logotype-transparent.png" alt="logo" class="logo-img">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="d-flex align-items-center">
+                    <!-- Logo and Language Switch Button -->
+                    <div class="d-flex align-items-center">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/img/logo/norton-innovation-logotype-transparent.png" alt="logo"
+                                class="logo-img">
+                        </a>
+                        <div class="btn-group">
+                            <button type="button" id="languageButton" class="btn btn-secondary dropdown-toggle"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Language
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="?lang=en">English</a></li>
+                                <li><a class="dropdown-item" href="?lang=pl">Polski</a></li>
+                                <li><a class="dropdown-item" href="?lang=sv">Svenska</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End of Logo and Language Switch Button -->
+
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto gap-lg-4 gap-1">
@@ -50,6 +70,7 @@
                             <a class="nav-link m-1 p-0" href="#tech">Technology</a>
                         </li>
                     </ul>
+                    <!-- Contact Button -->
                     <!-- <button type="button" class="btn btn-light ms-lg-5 mt-3 mb-3">Inspiration</button> -->
                     <a href="https://linktr.ee/nortoninnovation" target="_blank"><button type="button"
                             class="btn btn-success ms-lg-2 my-lg-2 mt-3 mb-3">Contact</button></a>
