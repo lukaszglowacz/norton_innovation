@@ -5,23 +5,38 @@ window.addEventListener('load', function () {
     document.body.classList.add('visible');
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const languageButton = document.getElementById("languageButton");
     const urlParams = new URLSearchParams(window.location.search);
     const lang = urlParams.get('lang') || 'en';
-    
+
     // Set the button label to the current language
-    switch(lang) {
-      case 'en':
-        languageButton.textContent = 'English';
-        break;
-      case 'pl':
-        languageButton.textContent = 'Polski';
-        break;
-      case 'sv':
-        languageButton.textContent = 'Svenska';
-        break;
-      default:
-        languageButton.textContent = 'Language';
+    switch (lang) {
+        case 'en':
+            languageButton.textContent = 'English';
+            break;
+        case 'pl':
+            languageButton.textContent = 'Polski';
+            break;
+        case 'sv':
+            languageButton.textContent = 'Svenska';
+            break;
+        default:
+            languageButton.textContent = 'Language';
     }
-  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    var languageButton = document.getElementById("languageButton");
+    var languageMenu = document.getElementById("languageMenu");
+
+    languageMenu.addEventListener("click", function (event) {
+        var target = event.target;
+
+        if (target.tagName === 'A') {
+            var selectedLanguage = target.getAttribute("data-language");
+            languageButton.innerHTML = selectedLanguage + ' <span class="caret"></span>';
+        }
+    });
+});

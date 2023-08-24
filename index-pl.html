@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
@@ -39,10 +39,12 @@
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Language
                             </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="index-en.html">English</a></li>
-                                <li><a class="dropdown-item" href="index-pl.html">Polski</a></li>
-                                <li><a class="dropdown-item" href="index-sv.html">Svenska</a></li>
+                            <ul class="dropdown-menu" id="languageMenu">
+                                <li><a class="dropdown-item" href="index-en.html" data-language="English">English</a>
+                                </li>
+                                <li><a class="dropdown-item" href="index-pl.html" data-language="Polski">Polski</a></li>
+                                <li><a class="dropdown-item" href="index-sv.html" data-language="Svenska">Svenska</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -186,14 +188,12 @@
                             naszej misji podnoszenia szwedzkiego środowiska i wnoszenia koloru i radości do codziennych
                             przestrzeni. Wierzymy w przekształcanie środowisk, poprawę dobrostanu naszych klientów i
                             sprawianie, że świat wydaje się trochę piękniejszy.</p>
-                        <p>Our long-term vision encompasses extending our trailblazing services to various European
-                            markets, becoming synonymous with innovation and top-tier quality in the sector. Backed by
-                            extensive
-                            research and customer-centric tests, we aim to provide a flawless service that matches your
-                            expectations
-                            and beyond.</p>
-                        <p>Come, step into a world of vibrancy and innovation with Norton Innovation. Your walls are our
-                            canvas, and your satisfaction, our masterpiece.</p>
+                        <p>Nasza długoterminowa wizja obejmuje rozszerzenie naszych pionierskich usług na różne rynki
+                            europejskie, stając się synonimem innowacji i najwyższej jakości w branży. Wspierani przez
+                            szeroko zakrojone badania i testy zorientowane na klienta, naszym celem jest zapewnienie
+                            bezbłędnej usługi, która odpowiada Twoim oczekiwaniom i nie tylko.</p>
+                        <p>Przyjdź i wejdź do świata tętniącego życiem i innowacjami dzięki Norton Innovation. Twoje
+                            ściany są naszym płótnem, a Twoja satysfakcja naszym arcydziełem.</p>
                     </div>
                     <div class="col-12 col-md-6 p-2 d-flex justify-content-center">
                         <img src="assets/img/profile/norbert.webp" alt="norbert profile">
@@ -220,24 +220,24 @@
                         class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center px-5 py-3 mb-3">
                         <h1 class="text-center">Stable Diffusion</h1>
                         <br>
-                        <p>
-                            Stable diffusion refers to the process where particles spread or disperse from a region of
-                            higher concentration to one of lower concentration, reaching a state of equilibrium. This
-                            natural phenomenon happens until the concentration of the particles is equal in all parts of
-                            the system. In a stable diffusion process, the rate of dispersion remains steady over time,
-                            resulting in a uniform spread of particles. This concept is often applied in various fields
-                            such as physics, chemistry, and engineering.</p>
+                        <p>Stabilna dyfuzja odnosi się do procesu, w którym cząstki rozprzestrzeniają się lub
+                            rozpraszają z obszaru o wyższym stężeniu do obszaru o niższym stężeniu, osiągając stan
+                            równowagi. To naturalne zjawisko ma miejsce, dopóki stężenie cząstek nie będzie równe we
+                            wszystkich częściach układu. W stabilnym procesie dyfuzji szybkość dyspersji pozostaje stała
+                            w czasie, co skutkuje równomiernym rozprzestrzenianiem się cząstek. Koncepcja ta jest często
+                            stosowana w różnych dziedzinach, takich jak fizyka, chemia i inżynieria.</p>
                     </div>
                     <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center px-5 py-3">
-                        <h1 class="text-center">Wall printer</h1>
+                        <h1 class="text-center">Drukarka ścienna</h1>
                         <br>
-                        <p>A wall printer is a device that is used to print high-quality images directly onto walls and
-                            other large surfaces. It operates similarly to a regular printer but on a much larger scale.
-                            Wall printers often use advanced technologies such as UV or eco-solvent inks and can print
-                            on a variety of surfaces including plaster, glass, tiles, metal, wood, and more. They are
-                            used in both residential and commercial settings to create murals, advertisements, signs, or
-                            decorative artwork. With precise control and high-resolution output, wall printers can
-                            transform an ordinary wall into a stunning visual display.</p>
+                        <p>Drukarka ścienna to urządzenie służące do drukowania wysokiej jakości obrazów bezpośrednio na
+                            ścianach i innych dużych powierzchniach. Działa podobnie jak zwykła drukarka, ale na
+                            znacznie większą skalę. Drukarki ścienne często wykorzystują zaawansowane technologie, takie
+                            jak atramenty UV lub ekosolwentowe i mogą drukować na różnych powierzchniach, w tym na
+                            gipsie, szkle, kafelkach, metalu, drewnie i innych. Wykorzystuje się je zarówno w budynkach
+                            mieszkalnych, jak i komercyjnych do tworzenia murali, reklam, znaków lub dzieł sztuki
+                            dekoracyjnej. Dzięki precyzyjnemu sterowaniu i wysokiej rozdzielczości drukarki ścienne mogą
+                            przekształcić zwykłą ścianę w oszałamiający wyświetlacz.</p>
                     </div>
                     <div class="col-12 col-md-6 d-flex justify-content-center ">
                         <img src="assets/img/wp-spec/tpp-1000.png" alt="Printer image" class="img-fluid">
@@ -281,12 +281,12 @@
             <div class="row">
                 <div class="col-12 col-md-4 d-flex flex-column align-items-center justify-content-center">
                     <ul class="list-unstyled fs-6 d-flex flex-column align-items-center justify-content-center">
-                        <li><a class="me-3 text-reset text-decoration-none" href="index.html">Home</a></li>
-                        <li><a class="me-3 text-reset text-decoration-none" href="#about">About</a></li>
-                        <li><a class="me-3 text-reset text-decoration-none" href="gallery.html">Gallery</a></li>
-                        <li><a class="me-3 text-reset text-decoration-none" href="#tech">Technology</a></li>
+                        <li><a class="me-3 text-reset text-decoration-none" href="index.html">Strona główna</a></li>
+                        <li><a class="me-3 text-reset text-decoration-none" href="#about">O nas</a></li>
+                        <li><a class="me-3 text-reset text-decoration-none" href="gallery.html">Galeria</a></li>
+                        <li><a class="me-3 text-reset text-decoration-none" href="#tech">Technologia</a></li>
                         <li><a class="me-3 text-reset text-decoration-none" href="https://linktr.ee/nortoninnovation"
-                                target="_blank">Contact</a></li>
+                                target="_blank">Kontakt</a></li>
                     </ul>
                 </div>
                 <div class="col-12 col-md-4 mb-3">
