@@ -142,6 +142,11 @@ p {
     width: 100%;
 }
 
+.space {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+
 /* On mobile, hide navigation buttons and pagination */
 @media (max-width: 768px) {
     .profile-img img {
